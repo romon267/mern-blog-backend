@@ -1,0 +1,27 @@
+GET http://localhost:3080/api/posts
+
+###
+GET http://localhost:3080/api/posts/all/best
+
+###
+POST http://localhost:3080/api/posts
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJpbmdvcyIsImlkIjoiNjAzYTA2ODFlMTllODUyMmM0YjU2YTMxIiwiaWF0IjoxNjE0NDE4NDk2fQ.IQKC95_fBFjVe2Q-3GF3B2fiJ9mHStfhH4nQSxGdac4
+
+{
+  "title": "new post"
+}
+
+###
+DELETE http://localhost:3080/api/posts/603a12631509e50e7051fc1e
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJpbmdvcyIsImlkIjoiNjAzYTA2ODFlMTllODUyMmM0YjU2YTMxIiwiaWF0IjoxNjE0NDI3NDU2fQ.eXnf2thXMA_LPQTyxgKF71KkbiSOr3bXKFExiVFEplc
+
+###
+PUT http://localhost:3080/api/posts/603a12631509e50e7051fc1e
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJpbmdvcyIsImlkIjoiNjAzYTA2ODFlMTllODUyMmM0YjU2YTMxIiwiaWF0IjoxNjE0NDE4NDk2fQ.IQKC95_fBFjVe2Q-3GF3B2fiJ9mHStfhH4nQSxGdac4
+
+{
+  "likes": 225,
+  "title": "Treasure finng top 5 lifehacks."
+}

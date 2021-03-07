@@ -1,0 +1,22 @@
+GET http://localhost:3080/api/users
+
+###
+POST http://localhost:3080/api/users
+Content-Type: application/json
+
+{
+  "name": "Bingo Boffin 3",
+  "email": "bingo4@mail.com",
+  "username": "bingos2",
+  "password1": "bingos123",
+  "password2": "bingos123"
+}
+
+###
+POST http://localhost:3080/api/login
+Content-Type: application/json
+
+{
+  "username": "bingos",
+  "password": "bingos123"
+}
